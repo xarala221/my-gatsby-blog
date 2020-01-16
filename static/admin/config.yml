@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  -  name: test-repo
+  +  name: github
+  +  repo: xarala221/my-gatsby-blog.git
 
 media_folder: static/assets
 public_folder: assets
