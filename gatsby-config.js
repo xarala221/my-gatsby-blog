@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Kyle Matthews`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Latest stories`,
+    author: `Ousseynou Diop`,
+    description: `Software developer.`,
+    siteUrl: `https://ousseynoudiop.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `xarala221`,
     },
   },
   plugins: [
@@ -35,8 +35,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
+        gatsbyRemarkPlugins: [{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
