@@ -1,5 +1,5 @@
 ---
-path: 'path: /how-to-create-an-ssl-certificate-usig-nginx-with-ubuntu/'
+path: how-to-create-an-ssl-certificate-usig-nginx-with-ubuntu
 date: 2020-01-16T22:12:58.236Z
 title: 'Nginx: How to create an SSL Self-Signed Certificate on Ubuntu'
 description: How you can create an SSL certificate on Ubuntu with Nginx
