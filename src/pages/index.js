@@ -25,9 +25,8 @@ class IndexPage extends React.Component {
         />
         {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> */}
         <h1>Hey people</h1>
-        <p>A passionate developer, trying to describe his journey.</p>
+        <p>A passionate developer, trying to share his journey.</p>
         <p>Breaking down big problems into smaller pieces of functionality.</p>
-        <p>Now go build something great!</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>

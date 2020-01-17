@@ -64,19 +64,20 @@ module.exports = {
       options: {
         // edit below
         // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-136949368-2`
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Ousseynou Diop Blog`,
+        short_name: `Ousseynou`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/me.jpeg`,
       },
     },
     {
