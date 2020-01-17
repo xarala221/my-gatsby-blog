@@ -18,7 +18,9 @@ In this tutorial i will help you to create an SSL certificate, using Nginx and C
 ## Requirements
 
 Nginx
+
 Ubuntu
+
 Comfort with **command Line/Terminal**
 
 ## Installation
