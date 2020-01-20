@@ -14,8 +14,11 @@ Think REST API as a web service that provide you the data you want to use in you
 The key component for a REST API request are:
 
 **GET** — The most common option, returns some data from the API based on the given endpoint .
+
 **POST** — Creates a new record and add it to the database.
+
 **PUT** — Update an existing record.
+
 **DELETE** — Deletes the record on the given endpoint.
 
 ## Getting started
