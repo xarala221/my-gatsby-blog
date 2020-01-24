@@ -13,7 +13,8 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     let disqusConfig = {
-      url: `${"https://ousseynoudiop.com" + window.location.pathname}`,
+      url: `${"https://ousseynoudiop.com" + typeof window !== "undefined" &&
+        window.location.pathname}`,
       identifier: post.id,
       title: post.title,
     }
