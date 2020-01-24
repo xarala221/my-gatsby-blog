@@ -6,18 +6,18 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+import { DiscussionEmbed } from "disqus-react"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
-    let disqusConfig = {
-      url: `${"https://ousseynoudiop.com"}`,
-      identifier: post.id,
-      title: post.title,
-    }
     const { previous, next } = this.props.pageContext
+    const disqusShortname = "ousseynou-herokuapp-com"
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -26,7 +26,6 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <h1>{post.frontmatter.title}</h1>
-        <CommentCount config={disqusConfig} placeholder={"..."} />
         <p
           style={{
             ...scale(-1 / 5),
@@ -38,7 +37,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <MDXRenderer>{post.body}</MDXRenderer>
-        <Disqus config={disqusConfig} />
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         <hr
           style={{
             marginBottom: rhythm(1),
