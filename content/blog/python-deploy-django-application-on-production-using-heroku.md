@@ -1,5 +1,5 @@
 ---
-path: deploy-django-application-to-heroku
+path: deploy-python-django-application-to-heroku
 date: 2020-01-24T08:58:01.388Z
 title: 'Python : Deploy Django application on production using  Heroku'
 description: >-
