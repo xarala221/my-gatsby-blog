@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Mailchimp from "react-mailchimp-form"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import "./emaillist.css"
 
 class IndexPage extends React.Component {
   render() {
@@ -24,11 +25,34 @@ class IndexPage extends React.Component {
           ]}
         />
         {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> */}
-        <h1>Hey people</h1>
-        <p>A passionate developer, trying to share his journey.</p>
-        <p>Breaking down big problems into smaller pieces of functionality.</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+        <h2 style={{ marginTop: "0" }}>Hey people</h2>
+        <p>A passionate software developer, trying to share his journey.</p>
+        {/* <EmailListForm /> */}
+        <Mailchimp
+          action="https://tech.us20.list-manage.com/subscribe/post?u=3799ac916fde9c123fac76e1d&amp;id=e9328319b4"
+          //Adding multiple fields:
+          fields={[
+            {
+              name: "EMAIL",
+              placeholder: "Your email address ",
+              type: "email",
+              required: true,
+            },
+          ]}
+          // Change predetermined language
+          messages={{
+            sending: "Sending...",
+            success: "Thank you for subscribing!",
+            error: "An unexpected internal error has occurred.",
+            empty: "You must write an e-mail.",
+            duplicate: "Too many subscribe attempts for this email address",
+            button: "SUBSCRIBE!",
+          }}
+          // Add a personalized class
+          className="EmailListForm"
+        />
+        <Link to="/blog/" style={{ textAlign: "center" }}>
+          <Button marginTop="0rem">Go to Blog</Button>
         </Link>
       </Layout>
     )
